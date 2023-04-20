@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="style1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KBscan</title>
+        <link rel="shortcut icon" type="image/png" href="./image/logo.png"/>
+    </head>
+<body>
+    <script type="text/javascript">
+       
+        function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navbar = document.querySelector('.navbar1');
+        navbar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        }
+
+    </script>
+    <header>
+        <a href="index.html" class="logo"><img src="./image/logo2.png" alt=""></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar1">
+            <li><a href="index.html" onclick="toggleMenu();">Acueil</a></li>
+            <li><a href="index.html" onclick="toggleMenu();" >A propos </a>
+                <div >
+                    <ul>
+                        <li><a href="expertise.html" onclick="toggleMenu();" > Notre expertise</a>
+                        <li><a href="expertise.html" onclick="toggleMenu();" > Notre politique</a>
+                    </ul>
+                </div>
+            </li>
+            
+            <li><a href="index.html#service" onclick="toggleMenu();">Nos services</a>
+                <ul>
+                    <li><a href="EAC.html" onclick="toggleMenu();" > Etude, Audit et Conseil</a></li>
+                    <li><a href="archivage.html" onclick="toggleMenu();" > Archivage Physique & Electronique</a>
+                        <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="archiphysique.html" onclick="toggleMenu();" > Archivage Physique </a>
+                        <li><a href="archielectronique.html" onclick="toggleMenu();" > Archivage Electronique</a>
+                    </ul>
+                </div>
+                    </li>
+                    <li><a href="GED.html" onclick="toggleMenu();" > GED / Dématérialisation</a>
+                       
+                    </li>
+                    
+                  </ul></li>
+                  <li><a href="Nosvaleurs.html" onclick="toggleMenu();" >Nos Valeurs </a>
+                    <div >
+                        <ul>
+                            <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Qualité</a>
+                            <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Sécurité</a>
+                        </ul>
+                    </div>
+                </li>
+            <li><a href="contact.html" onclick="toggleMenu();">Nos Contacts</a></li>
+           
+        </ul>
+        
+    </header>
+
+<div class="expertise">
+    <h2 class="titre2">      
+        Notre Expertise
+    </h2>
+    <hr >
+         <h3>Nos compétences</h3>
+         <div class="p1">
+         <p>Cette année, nous avons développé de nouveaux programmes pour être au plus près des préoccupations des entreprises et des besoins de demain. Nous améliorons sans cesse nos méthodes de travail en faisant de votre satisfaction notre priorité.Nous apportons des réponses méthodologiques et structurées face aux problématiques présentes dans votre entreprise. 
+            </p></div>
+           <h3>Pourquoi externaliser l’archivage de ses documents ?</h3>
+         <div class="p2">
+           <p>Force est de constater que de nombreuses entreprises archivent elles-mêmes leurs documents,  <span class="kbscan">KB</span>scan souhaite sensibiliser les entreprises et les administrations à réaliser l’importance d’une bonne conservation des archives :  Face à la démultiplication des données et de leur point d’accès, l’archivage représente un réel enjeu stratégique pour les entreprises et le traitement de ces volumes nécessite des compétences sur des technologies et des méthodes analytiques les plus pointues.</p>
+            </div>
+        </div>
+<div class="politique">
+    <h2 class="titre2">      
+        Notre Politique
+    </h2>
+    <hr >
+    <i class="fa-solid fa-award"></i>
+<div class="p1">
+   <p>L’équipe <span class="kbscan">KB</span>scan s’engage à offrir une prestation de qualité à ses clients, ainsi que d’être un partenaire intègre et consciencieux. </p>
+</div>
+<i class="fa-solid fa-lock"></i>
+<div class="p2">
+    <p>Nous ferons le maximum pour protéger et sécuriser vos données confidentielles.</p>
+</div>
+<i class="fa-solid fa-hands-holding-circle"></i>
+<div class="p3">
+    <p>Ensemble, nous nous efforçons de  créer des solutions innovantes qui auront un impact environnemental et social positif dans le but  d’assurer un avenir durable. </p>
+</div>
+<div class="p4">
+    <p>Nous concentrons nos efforts sur ce qui compte le plus - préserver la confiance des clients - améliorer et simplifier votre quotidien au travail – et protéger l’environnement.</p>
+</div>
+</div>
+<footer id="contact">
+        
+    <div class="div-footer">
+        <span class="localisation">
+           <i class="fas fa-map-marker"></i>
+          <p class=p-localisation> 32 Av. Madagascar, Rabat 10040</p>
+        </span>
+        <span class="email">
+           <i class="far fa-envelope"></i>
+          <p class="p-email"> kbscan_@gmail.com</p>
+        </span>
+        <span class="telephone">
+           <i class="fas fa-mobile"></i>
+             <p class="p-telephone"> +212658475258</p>
+        </span>
+   </div>
+    </footer>
+
+</body>
+</html>

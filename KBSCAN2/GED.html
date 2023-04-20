@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBscan</title>
+    <link rel="shortcut icon" type="image/png" href="./image/logo.png"/>
+</head>
+<body>
+    <script type="text/javascript">
+       
+        function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navbar = document.querySelector('.navbar1');
+        navbar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        }
+
+    </script>
+    <header>
+        <a href="index.html" class="logo"><img src="./image/logo2.png" alt=""></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar1">
+            <li><a href="index.html" onclick="toggleMenu();">Acueil</a></li>
+            <li><a href="index.html" onclick="toggleMenu();" >A propos </a>
+                <div >
+                    <ul>
+                        <li><a href="expertise.html" onclick="toggleMenu();" > Notre expertise</a>
+                        <li><a href="expertise.html" onclick="toggleMenu();" > Notre politique</a>
+                    </ul>
+                </div>
+            </li>
+            
+            <li><a href="index.html#service" onclick="toggleMenu();">Nos services</a>
+                <ul>
+                    <li><a href="EAC.html" onclick="toggleMenu();" > Etude, Audit et Conseil</a></li>
+                    <li><a href="archivage.html" onclick="toggleMenu();" > Archivage Physique & Electronique</a>
+                        <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="archiphysique.html" onclick="toggleMenu();" > Archivage Physique </a>
+                        <li><a href="archielectronique.html" onclick="toggleMenu();" > Archivage Electronique</a>
+                    </ul>
+                </div>
+                    </li>
+                    <li><a href="GED.html" onclick="toggleMenu();" > GED / Dématérialisation</a>
+                      
+                    </li>
+                    
+                  </ul></li>
+                  <li><a href="Nosvaleurs.html" onclick="toggleMenu();" >Nos Valeurs </a>
+                    <div >
+                        <ul>
+                            <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Qualité</a>
+                            <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Sécurité</a>
+                        </ul>
+                    </div>
+                </li>
+            <li><a href="contact.html" onclick="toggleMenu();">Nos Contacts</a></li>
+           
+        </ul>
+        
+    </header>
+    <div class="ged">
+        <h2 class="titre2">      
+            GED / Dématérialisation
+        </h2>
+        <hr >
+    
+    
+    <div class="p1">
+        <p>La dématérialisation survient lorsqu’une archive perd son format papier et devient un document électronique, elle est donc une archive dématérialisée.</br></br> Une fois les documents dématérialisés, des questions se posent quant aux accès : qui aura accès aux documents ? Quand ? Dans quels buts ? Plusieurs aspects sont donc à prendre en compte.</br></br>Il faut donc se pencher sur des outils de gestion.</p>
+        
+    </div>
+    <div class="t2">
+        <h3>Quels outils de gestion utilisons-nous ?</h3>
+    </div>
+    <div class="p2">
+        <p>La Gestion Electronique des Documents (GED) est un logiciel informatisé  qui vise à gérer et à organiser des informations sous forme de documents électroniques.</br></br> L’Echange des données informatisées (L’EDI) est un outil qui permet le traitement informatisé des factures. Elles seront traitées et vérifiées et transmises pour validation. 
+            </p>
+    </div>
+    <div class="t2">
+        <h3>La mise en place de solutions informatiques</h3>
+    </div>
+    <div class="p2">
+        <p>La mise en place de solutions informatiques est un procédé important qui va permettre aux outils choisis de fonctionner dans les meilleures conditions. Ce procédé offre un panel de fonctionnalités essentielles à l’infrastructure informatique qui va permettre notamment d’optimiser un système d’information ou d’automatiser des tâches. Elle se fait en plusieurs étapes : 
+            </p>
+    </div>
+    
+    <div class="point-forts">   
+        
+        <ul class="b">
+            <li>La création d’un cahier des charges </li>
+            <li>La gestion des processus opérationnels afin que la structure respecte les besoins</li>
+            <li>L’Installation, la configuration et la personnalisation de l’outil </li>
+            <li>L’Ajustement et l’importation des données</li>
+            <li>Les Tests et la formation des utilisateurs</li>
+            <li>La Mise en place finale de l’outil </li>
+        </ul>
+       </div>
+       <div class="p2">
+        <p><span class="kbscan">KB</span>scan propose un large spectre de solutions informatiques destinées aux entreprises quel que soit leur secteur d ‘activités. Les solutions proposées garantiront la conception d’outils sur mesure, l’accompagnement sur le long terme et la maintenance des solutions mises en place afin de répondre aux besoins de votre activité.   
+            </p>
+    </div>
+</div>
+    <footer id="contact">
+        
+        <div class="div-footer">
+            <span class="localisation">
+               <i class="fas fa-map-marker"></i>
+              <p class=p-localisation> 32 Av. Madagascar, Rabat 10040</p>
+            </span>
+            <span class="email">
+               <i class="far fa-envelope"></i>
+              <p class="p-email"> kbscan_@gmail.com</p>
+            </span>
+            <span class="telephone">
+               <i class="fas fa-mobile"></i>
+                 <p class="p-telephone"> +212658475258</p>
+            </span>
+       </div>
+        </footer>
+</body>
+</html>

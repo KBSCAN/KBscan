@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBscan</title>
+    <link rel="shortcut icon" type="image/png" href="./image/logo.png"/>
+</head>
+<body>
+    <script type="text/javascript">
+       
+        function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navbar = document.querySelector('.navbar1');
+        navbar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        }
+
+    </script>
+    <header>
+        <a href="index.html" class="logo"><img src="./image/logo2.png" alt=""></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar1">
+            <li><a href="index.html" onclick="toggleMenu();">Acueil</a></li>
+            <li><a href="index.html" onclick="toggleMenu();" >A propos </a>
+                <div >
+                    <ul>
+                        <li><a href="archiphysique.html" onclick="toggleMenu();" > Notre expertise</a>
+                        <li><a href="archielectronique.html" onclick="toggleMenu();" > Notre politique</a>
+                    </ul>
+                </div>
+            </li>
+            
+            <li><a href="index.html#service" onclick="toggleMenu();">Nos services</a>
+                <ul>
+                    <li><a href="EAC.html" onclick="toggleMenu();" > Etude, Audit et Conseil</a></li>
+                    <li><a href="archivage.html" onclick="toggleMenu();" > Archivage Physique & Electronique</a>
+                        <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="archiphysique.html" onclick="toggleMenu();" > Archivage Physique </a>
+                        <li><a href="archielectronique.html" onclick="toggleMenu();" > Archivage Electronique</a>
+                    </ul>
+                </div>
+                    </li>
+                    <li><a href="GED.html" onclick="toggleMenu();" > GED / Dématérialisation</a>
+                      
+                    </li>
+                   
+                  </ul></li>
+                  <li><a href="Nosvaleurs.html" onclick="toggleMenu();" >Nos Valeurs </a>
+                    <div >
+                        <ul>
+                            <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Qualité</a>
+                            <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Sécurité</a>
+                        </ul>
+                    </div>
+                </li>
+            <li><a href="contact.html" onclick="toggleMenu();">Nos Contacts</a></li>
+           
+        </ul>
+        
+    </header>
+
+    <div>
+        <h2 class="titre2">
+            Archivage Physique 
+        </h2>
+        <hr >
+    </div>
+
+    <div class="archi-phisi">
+        <p class="p-phisi">L’archivage physique consiste à conserver les documents sous forme papier. La loi veut que les entreprises conservent certains documents fiscaux, comptables ou autres, pour une certaine durée et ils peuvent être difficiles à retrouver si on souhaite en disposer et en tirer parti. De plus, l’archivage physique est aussi un enjeu de performance pour l’entreprise, car les collaborateurs doivent être en capacité d’utiliser ou de consulter les documents archivés à tout moments.</br> Externaliser ses archives permet donc de s’assurer d’une conservation sécurisée des documents, de la mise en place d’une politique d’archivage et d’un plan de classement efficace.  
+            </p>
+       
+    
+    <div class="point-forts">
+        <h3>KBSCAN vous propos les service suivants :</h3>
+        <div class="list-phisi">
+        <ul class="a">
+            <li>La préparation des documents : assainissement et classement</li>
+            <li>La numérisation des documents</li>
+            <li>L’indexation des documents</li>
+            <li>L’Océrisation (Reconnaissance optique de caractères)</li>
+            <li>L’accès sécurisé aux documents </li>
+           </div>
+        </ul>
+    </div>
+       <div class="image1"></div>
+    </div>
+
+    <footer id="contact">
+        
+        <div class="div-footer">
+            <span class="localisation">
+               <i class="fas fa-map-marker"></i>
+              <p class=p-localisation> 32 Av. Madagascar, Rabat 10040</p>
+            </span>
+            <span class="email">
+               <i class="far fa-envelope"></i>
+              <p class="p-email"> kbscan_@gmail.com</p>
+            </span>
+            <span class="telephone">
+               <i class="fas fa-mobile"></i>
+                 <p class="p-telephone"> +212658475258</p>
+            </span>
+       </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="style1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KBscan</title>
+        <link rel="shortcut icon" type="image/png" href="./image/logo.png"/>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+            function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar1');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            }
+    
+        </script>
+        <header>
+            <a href="index.html" class="logo"><img src="./image/logo2.png" alt=""></a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="navbar1">
+                <li><a href="index.html" onclick="toggleMenu();">Acueil</a></li>
+                <li><a href="index.html" onclick="toggleMenu();" >A propos </a>
+                    <div >
+                        <ul>
+                            <li><a href="expertise.html" onclick="toggleMenu();" > Notre expertise</a>
+                            <li><a href="expertise.html" onclick="toggleMenu();" > Notre politique</a>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li><a href="index.html#service" onclick="toggleMenu();">Nos services</a>
+                    <ul>
+                        <li><a href="EAC.html" onclick="toggleMenu();" > Etude, Audit et Conseil</a></li>
+                        <li><a href="archivage.html" onclick="toggleMenu();" > Archivage Physique & Electronique</a>
+                            <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="archiphysique.html" onclick="toggleMenu();" > Archivage Physique </a>
+                            <li><a href="archielectronique.html" onclick="toggleMenu();" > Archivage Electronique</a>
+                        </ul>
+                    </div>
+                        </li>
+                        <li><a href="GED.html" onclick="toggleMenu();" > GED / Dématérialisation</a>
+                          
+                        </li>
+                        
+                      </ul></li>
+                      <li><a href="#apropos" onclick="toggleMenu();" >Nos Valeurs </a>
+                        <div >
+                            <ul>
+                                <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Qualité</a>
+                                <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Sécurité</a>
+                            </ul>
+                        </div>
+                    </li>
+                <li><a href="contact.html" onclick="toggleMenu();">Nos Contacts</a></li>
+               
+            </ul>
+            
+        </header>
+       <div class="qualite">
+        <h2 class="titre1">
+             Qualité 
+        </h2>
+    <hr >
+    <div class="image-qualite"><img src="./image/qualite.jpg" alt=""></div>
+    <p class="qualite-p"><span class="kbscan">KB</span>scan, nous nous concentrons sur l’essentiel : </br></br>La satisfaction de nos clients.Nous savons nous adapter aux besoins de votre entreprise  et nous nous engageons dans une démarche de recherche de l’excellence pour améliorer sans cesse la qualité de nos services. Notre succès dépend fortement de notre capacité à répondre aux attentes de nos clients grâce à la qualité de nos prestations dans un marché aux exigences élevées.  
+        </p>    
+    </div>
+    <div class="securite">
+        <h2 class="titre2">
+            Sécurité
+        </h2>
+    <hr >
+    <div class="image-securite"><img src="./image/securite.jpg" alt=""></div>
+    <p class="securite-p">Le respect de la vie privée est un droit fondamental, et c’est l’une de nos valeurs clés, c’est pourquoi nos prestations sont conçues de manière à protéger la confidentialité de vos documents.   
+        </p>
+        <div class="securite2">
+            <h3>Clés d’identification :</h3>
+            <ul class="b">
+                <li>Simples</li>
+                <li>Sécurisées</li>
+            </ul>
+           </div>
+           <div class="securite2">
+            <h3>Contrôle de sécurité :</h3>
+            <ul class="b">
+                <li>Reprenez les commandes en cas de besoin</li>
+    
+            </ul>
+           </div>
+           <div class="securite2">
+            <h3>Confidentialité des Mails :</h3>
+            <ul class="b">
+                <li>Lisez, partagez, supprimez en toute sécurité</li>
+                
+            </ul>
+           </div>
+          
+
+
+    </div>
+    
+    
+    <footer id="contact">
+        
+        <div class="div-footer">
+            <span class="localisation">
+               <i class="fas fa-map-marker"></i>
+              <p class=p-localisation> 32 Av. Madagascar, Rabat 10040</p>
+            </span>
+            <span class="email">
+               <i class="far fa-envelope"></i>
+              <p class="p-email"> kbscan_@gmail.com</p>
+            </span>
+            <span class="telephone">
+               <i class="fas fa-mobile"></i>
+                 <p class="p-telephone"> +212658475258</p>
+            </span>
+       </div>
+        </footer>
+    </body>
+    
+    </html>

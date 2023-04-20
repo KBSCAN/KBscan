@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBscan</title>
+    <link rel="shortcut icon" type="image/png" href="./image/logo.png"/>
+</head>
+<body>
+    <script type="text/javascript">
+      
+        function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navbar = document.querySelector('.navbar1');
+        navbar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        }
+
+    </script>
+    <header>
+        <a href="index.html" class="logo"><img src="./image/logo2.png" alt=""></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar1">
+            <li><a href="index.html" onclick="toggleMenu();">Acueil</a></li>
+            <li><a href="index.html" onclick="toggleMenu();" >A propos </a>
+                <div >
+                    <ul>
+                        <li><a href="expertise.html" onclick="toggleMenu();" > Notre expertise</a>
+                        <li><a href="expertise.html" onclick="toggleMenu();" > Notre politique</a>
+                    </ul>
+                </div>
+            </li>
+            
+            <li><a href="index.html#service" onclick="toggleMenu();">Nos services</a>
+                <ul>
+                    <li><a href="EAC.html" onclick="toggleMenu();" > Etude, Audit et Conseil</a></li>
+                    <li><a href="archivage.html" onclick="toggleMenu();" > Archivage Physique & Electronique</a>
+                        <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="archiphysique.html" onclick="toggleMenu();" > Archivage Physique </a>
+                        <li><a href="archielectronique.html" onclick="toggleMenu();" > Archivage Electronique</a>
+                    </ul>
+                </div>
+                    </li>
+                    <li><a href="GED.html" onclick="toggleMenu();" > GED / Dématérialisation</a>
+                       
+                    </li>
+                    
+                  </ul></li>
+                  <li><a href="Nosvaleurs.html" onclick="toggleMenu();" >Nos Valeurs </a>
+                    <div >
+                        <ul>
+                            <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Qualité</a>
+                            <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Sécurité</a>
+                        </ul>
+                    </div>
+                </li>
+            <li><a href="contact.html" onclick="toggleMenu();">Nos Contacts</a></li>
+           
+        </ul>
+        
+    </header>
+    <div>
+        <h2 class="titre2">      
+                Archivage Electronique
+        </h2>
+        <hr >
+    </div>
+    <div class="archi-electro">
+    <div class="p2">
+        <p>L’archivage électronique représente le stockage de documents sur un support de données digitales accessibles par ordinateur. Il peut s’agir de documents papier ou de documents qui n’existent que sous forme numérique, par exemple des e-mails.  En effet, l’environnement des affaires est de plus en plus marqué par l’émergence du numérique comme nouvelle source de création de valeur. L’archivage électronique est donc très important en particulier pour les entreprises qui ont un très grand nombre de documents qui transitent entre les différents départements.</br></br>Ce processus rationalise le travail et fait gagner du temps aux employés. Les entreprises de toutes taillent gagneront à recourir à l’archivage électronique, car cela facilite l’organisation. De plus, c’est un gain de place pour la société et les documents ne risquent pas d’être détruits ou dégradés en cas d’incidents ou simplement avec le temps. Enfin, stocker ses documents sur papier représente un coût pour l’entreprise, passer à l’archivage électronique sera bénéfique pour les finances de la société. </p>
+       
+    </div>
+    
+    <div class="point-forts">
+        <h3>KBSCAN vous propos les service suivants :</h3>
+        <ul class="b">
+            <li>Gérer et uniformiser les documents de leur création à leur archivage.</li>
+            <li> Partager les données avec un certain nombre de personnes autorisées et permettre aux collaborateurs de mettre à jour les documents.</li>
+            <li>Réduire les coûts de traitement.</li>
+            <li>Une meilleure gouvernance documentaire au sein de l’entreprise ainsi qu’une gestion facilitée de documents partagés entre collaborateurs.</li>
+           
+        </ul>
+       </div>
+        <div class="image2"></div>
+    </div>
+
+
+    <footer id="contact">
+        
+        <div class="div-footer">
+            <span class="localisation">
+               <i class="fas fa-map-marker"></i>
+              <p class=p-localisation> 32 Av. Madagascar, Rabat 10040</p>
+            </span>
+            <span class="email">
+               <i class="far fa-envelope"></i>
+              <p class="p-email"> kbscan_@gmail.com</p>
+            </span>
+            <span class="telephone">
+               <i class="fas fa-mobile"></i>
+                 <p class="p-telephone"> +212658475258</p>
+            </span>
+       </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top:0%;
+    left: 0%;
+   background-color: #C83B31;
+    padding:20px 10px;
+    width: 100%;
+    height:70px;
+    z-index:1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0,8s;
+}
+.logo img 
+{
+width:8%;
+position: absolute;
+top: 28%;
+left: 5%;
+
+}
+.plus{
+padding-left: 20px;
+}
+
+.navbar1{
+    display: flex;
+    position: relative;
+  
+}
+
+.navbar1 li{
+    list-style: none;
+    position: relative;
+    padding: 18px 14px ;
+}
+.navbar1 li a{
+   color: white;
+    text-decoration: none;
+    margin-left:30px;
+     font-weight: 700;  
+     font-size: 15px;
+     display: block;
+    
+}
+.navbar1 li ul  {
+    display: none;
+    position: absolute;
+    width:250px;
+    margin-left:30px;
+   height:50px;
+   margin-top:15px;
+  
+
+}
+.sub-menu-1{
+    display: none;
+    
+}
+.navbar1 li ul li:hover .sub-menu-1{
+display: block;
+position: absolute;
+margin-left: 200px;
+margin-top: -56px;
+}
+
+
+.navbar1 li ul li {
+    background-color:#C83B31;
+    border-bottom: 1px solid beige;
+  
+}
+
+.navbar1 ul li a{
+ margin-left: 0;
+} 
+
+.navbar1 li:hover ul{
+display: block;
+
+}
+
+header .navbar1 li a:hover{   
+    color:black;
+
+}   
+header .navbar1 ul li a:hover{
+    color: black;
+}
+
+header.sticky{
+    background:beige;
+    height:60px;
+    padding: 10px 10px;
+
+
+}
+
+header.sticky .navbar1 li a{
+    color: #C83B31;
+}
+header.sticky .navbar1 ul li{
+    background-color: beige;
+    border-bottom: 1px solid #C83B31;
+
+}
+header.sticky .navbar1 ul li a:hover{
+    color:black ;
+
+}
+
+
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+    margin-top: 10%;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background:linear-gradient(rgba(0,0,0,0.5),#C83B31), url(./image/Banniere.jpg) center/cover no-repeat;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("./image/Banniere.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color:#C83B31;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color:#C83B31;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color:#C83B31;
+}
+
+.field:focus{
+    border: 2px solid #C83B31;
+    background-color: #fff;
+}
+
+/*footer*/
+.pied-logo img{
+    width:10%;
+    margin-top:2%;
+    margin-left: 2%;
+}
+footer{
+    width: 100%;
+    background:#C83B31;
+    bottom: 0;
+    height:70%;
+margin-top:10%;
+    
+}
+
+footer .localisation{
+    display: inline-block;
+  
+    width:300px;
+    height:150px;
+    margin-left:200px;
+   margin-top:3%;
+   
+}
+footer .email{
+    display: inline-block;
+ 
+   position: absolute;
+    width:300px;
+    height:150px;
+    margin-left:80px;
+    margin-top:3%;
+}
+footer .telephone{
+    display: inline-block;
+    position: absolute;
+   
+    width:300px;
+    height:150px;
+    margin-left:420px;
+    margin-top:3%;
+    
+}
+
+.p-localisation{
+    margin-top:27px;
+   text-align: center;
+   
+
+}
+.p-email{
+    margin-top: 22px;
+    text-align: center;
+}
+.p-telephone{
+    margin-top:28px;
+    text-align: center;
+}
+.div-footer .fas {
+    color:black;
+    margin-left: 130px;
+    margin-top:30px;
+    font-size:30px;
+    
+}
+
+.div-footer .far {
+    color:black;
+    margin-left:130px;
+    margin-top:30px;
+     font-size:35px;
+}
+@media screen and (max-width: 991px){
+	.contact-box{
+		grid-template-columns: 1fr;
+        margin-left:0;
+        
+        font-size:13px;
+        
+        width: 500px;
+	}
+	.left{
+		height: 200px;
+        
+        
+	}
+    .right{
+        width:320px;
+    }
+ 
+
+    header.sticky{
+        padding: 10px 20px;
+      height:65px;
+    }
+    header .navbar1 li{
+        margin-left: 0px;
+    }
+    header .navbar1 li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 2em;
+        font-weight: 300;
+        
+    }
+    .navbar1{
+        display: none;
+        
+    }
+    header .navbar1.active{
+        width:100%;
+        height: 100%;
+        height: calc(100% -68px);
+        position: fixed;
+        top:70px;
+        padding-top: 50px;
+        display: flex;
+        justify-content:left;
+        flex-direction: column;
+        background:beige;
+       padding-right: 10px;
+        border-radius: 3em;
+    transition: 0.6s ease-in;
+    }
+    header .navbar1.active{
+        color: #C83B31;
+    }
+    header .logo img {
+        width: 20%;
+        
+    }
+    header .navbar1.active li ul{
+        margin-top: -10px;
+      margin-left:50%;
+      font-size: 10px;
+      position: relative;
+     
+    }
+    
+   
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url(./image/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        background-size: 30px;
+        margin-left:80%;
+    }
+    
+    .menuToggle.active
+    {
+        background-image: url(./image/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-origin: center;
+      
+    }
+    
+    header.sticky .menuToggle{
+        filter: invert(1);
+        
+    }
+    /*footer*/ 
+    footer{
+        width:100%;
+        height: 100%;
+    }
+    footer .localisation{
+        margin-left:15%;
+        height:10px;
+        font-size: 12px;
+      font-weight: bold;
+       margin-top: -5%;
+       position: relative;
+    }
+    footer .email{
+        margin-left:15%;
+        font-size: 12px;
+        height:10%;
+        margin-top: -5%;
+        font-weight: bold;
+        position: relative;
+    }
+    footer .telephone{
+        margin-left: 15%;
+        font-size: 12px;
+        height:10%;
+        margin-top: -2%;
+        font-weight: bold;
+        position: relative;
+    }
+    footer .telephone p{
+        margin-top:10px;
+    }
+    .div-footer .fas{
+        font-size:20px;
+        margin-left: 45%;
+        border: 2px solid  rgb(134, 31, 31);
+        border-radius:5px;
+        width: 10%;
+        height:30px;
+        text-align: center;
+        padding-top:4px;
+        background-color: rgb(245, 245, 187);
+        color: #C83B31;
+    }
+    .div-footer .far{
+        font-size:20px;
+        margin-left: 45%;
+        border: 2px solid  rgb(134, 31, 31);
+        width: 10%;
+        height:30px;
+        text-align: center;
+        padding-top:4px;
+        color: #C83B31;
+        background-color: rgb(245, 245, 187);
+        border-radius:5px;
+       
+    }
+}
+
+

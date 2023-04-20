@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBscan</title>
+    <link rel="shortcut icon" type="image/png" href="./image/logo.png"/>
+</head>
+<body>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0 );
+        });
+   
+        function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+        }
+
+    </script>
+    <header>
+        <a href="index.html" class="logo"><img src="./image/logo.png" alt=""></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar">
+            <li><a href="#baniere" onclick="toggleMenu();">Acueil</a></li>
+            <li><a href="#apropos" onclick="toggleMenu();" >A propos </a>
+                <div >
+                    <ul>
+                        <li><a href="expertise.html" onclick="toggleMenu();" > Notre expertise</a>
+                        <li><a href="archielectronique.html" onclick="toggleMenu();" > Notre politique</a>
+                    </ul>
+                </div>
+            </li>
+            
+            <li><a href="#service" onclick="toggleMenu();">Nos services</a>
+                <ul>
+                    <li><a href="EAC.html" onclick="toggleMenu();" > Etude, Audit et Conseil</a></li>
+                    <li><a href="archivage.html" onclick="toggleMenu();" > Archivage Physique & Electronique</a>
+                        <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="archiphysique.html" onclick="toggleMenu();" > Archivage Physique </a>
+                        <li><a href="archielectronique.html" onclick="toggleMenu();" > Archivage Electronique</a>
+                    </ul>
+                </div>
+                    </li>
+                    <li><a href="GED.html" onclick="toggleMenu();" > GED / Dématérialisation</a> </li>
+                    
+                  </ul></li>
+                  <li><a href="Nosvaleurs.html" onclick="toggleMenu();" >Nos Valeurs </a>
+                    <div >
+                        <ul>
+                            <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Qualité</a>
+                            <li><a href="Nosvaleurs.html" onclick="toggleMenu();" > Sécurité</a>
+                        </ul>
+                    </div>
+                </li>
+            <li><a href="contact.html" onclick="toggleMenu();">Nos Contacts</a></li>
+           
+        </ul>
+        
+    </header>
+    <section class="baniere" id="baniere" >
+  
+<div class="baniere-text">
+    <h1>KBSCAN</h1>
+<p>Acteur incontournable dans l’archivage physique et électronique ainsi que dans la gestion de 
+    la chaîne documentaire et pionner dans son domaine, KBscan est considéré comme un 
+    véritable atelier de digitalisation : il conseille et accompagne les entreprises dans leur passage 
+    vers le zéro papier.</p>
+</div>
+<div class="baniere_btn">
+    <a href="contact.html"> <span></span> Contact</a>
+</div>
+    </section>
+    
+    <section class="apropos" id="apropos">
+        <div class="titre-text">
+            <p>À propos</p>
+            <h1>À propos de nous?</h1>
+        </div>
+        <div class="propos_boite">
+            
+            <h1 class="h1">Qui sommes-nous ?</h1>
+            <p class="titre"><span class="kbscan">KB</span>scan est une société d’archivage marocaine, fondée par des experts de l’information et du patrimoine. Notre savoir-faire et la qualité de nos prestations font de nous un acteur incontournable dans le secteur de l’archivage au Maroc. Notre rôle est de vous accompagner dans la conception et la réalisation de vos projets. </p>
+            <h1 class="h2">Notre équipe</h1>
+            <p class="titre2"><span class="kbscan">KB</span>scan est constitué d’une équipe de professionnels hautement qualifiés dans le domaine de l’archivage. Véritable partenaire dans l’évolution de votre entreprise, nous mettons notre savoir-faire en action pour vous offrir une prestation d’excellence. Ce savoir-faire a été acquis par nos équipes lors des nombreuses interventions sur le terrain, ce qui nous a valu de gagner la confiance de nos clients.   </p>
+            <div class="im-mission">
+
+                </div>
+            
+        </div>
+    </section>
+       <!-- <section class="avantage" id="avantage">
+            <div class="titre-text">
+                <p>AVANTAGES</p>
+                <h1>Plus Que la qualité</h1>
+            </div>
+            <div class="avantage_boite">
+                <div class="avantage_unique">
+                <img src="./image/s2.jpg" alt="">
+                <div class="text_sur">
+                    <div class="descrip">
+                       <h3>LES AVANTAGES DE KBSCAN</h3>
+                       <hr>
+                       
+                           <div class="description">
+                               <div class="mission_icon">
+                                  <i class="fa-solid fa-plus"></i>
+                               </div>
+                               <div class="mission-text">
+                                 <p> L’accès rapide et à distance aux documents permettant l’accès à la base de GED
+                                 et rendant possible une consultation immédiate des documents.</p>
+                                </div>
+                           </div>
+                           <div class="description">
+                            <div class="mission_icon">
+                               <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="mission-text">
+                              <p> Une plateforme unique pour l’ensemble des documents de l’entreprise : les documents 
+                                produits dans l’entreprise sont tous stockés dans une même base, prévenant ainsi
+                                le risque d’une dispersion des documents.</p>
+                             </div>
+                          </div>
+                          <div class="description">
+                            <div class="mission_icon">
+                               <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="mission-text">
+                              <p>L’archivage et la conservation des documents : le système de GED garantit
+                                la conservation des documents produits dans l’entreprise, et assure la pérennité
+                                dans l’accès aux documents.</p>
+                             </div>
+                          </div>
+                          
+                          <div class="description">
+                            <div class="mission_icon">
+                               <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="mission-text">
+                              <p>La sécurité des données grâce à une fonctionnalité de gestion des accès.</p>
+                             </div>
+                          </div>
+                         
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="avantage_unique">
+                <img src="./image/s1.jpg" alt="">
+                <div class="text_sur">
+                    <div class="descrip">
+                       <h3>AVANTAGES D’UNE GESTION ÉLECTRONIQUE DOCUMENTAIRE</h3>
+                       <hr>                   
+                           <div class="description">
+                               <div class="mission_icon">
+                                  <i class="fa-solid fa-plus"></i>
+                               </div>
+                               <div class="mission-text">
+                                 <p>  Gérer et uniformiser les documents de leur création à leur archivage.</p>
+                                </div>
+                           </div>
+                           <div class="description">
+                            <div class="mission_icon">
+                               <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="mission-text">
+                              <p> Partager les données avec un certain nombre de personnes autorisées et permettre 
+                                aux collaborateurs de mettre à jour les documents.</p>
+                             </div>
+                          </div>
+                          <div class="description">
+                            <div class="mission_icon">
+                               <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="mission-text">
+                              <p> Réduire les coûts de traitement.</p>
+                             </div>
+                          </div>
+                          <div class="description">
+                            <div class="mission_icon">
+                               <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="mission-text">
+                              <p>Une meilleure gouvernance documentaire au sein de l’entreprise ainsi qu’une gestion 
+                                facilitée de documents partagés entre collaborateurs.</p>
+                             </div>
+                          </div>
+                
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+        </section>-->
+       
+        <section class="service" id="service">
+            <div class="titre-text">
+                <p>SERVICES</p>
+                <h1>Pourquoi Nous?</h1>
+            </div>
+            <div class="service-boite">
+
+                <div class="service-simple">
+                    <div class="utilisateur">
+                       <h3><a href="EAC.html">Etude, Audit & Conseil</a></h3>
+                        <div class="info_util">
+                            
+                        </div>
+                    </div>
+                    <p><i class="fa-sharp fa-solid fa-check"></i> Etude archivistique et étude des processus métiers internes relatifs à la gestion documentaire. </p>
+                    <p><i class="fa-sharp fa-solid fa-check"></i> Élaboration de votre politique d’archivage et des outils de gestion : Plan de classement, Calendrier de conservation, Charte d’archivage, etc. </p>
+                    
+                </div>
+                <div class="service-simple">
+                    <div class="utilisateur">
+                        <h3><a href="archivage.html"> ARCHIVAGE PHYSIQUE ET ÉLECTRONIQUE</a></h3>
+                        <div class="info_util">
+                            
+                        </div>
+                    </div>
+                
+                    <p><i class="fa-sharp fa-solid fa-check"></i> Archivage Physique : Protégez votre entreprise en adoptant un archivage conforme aux normes et lois en vigueur. </p>
+                    
+                    <p><i class="fa-sharp fa-solid fa-check"></i> Archivage Electronique : une solution dédiée pour gérer tout type de documents d’entreprise quelque soit son format (scan, fichier, e-mail, son, image, vidéo). </p>
+                    
+                    
+                </div>
+                
+                <div class="service-simple" id="digi">
+                    <div class="utilisateur">
+                        <h3><a href="GED.html">Digitalisation / GED</a> </h3>
+                        <div class="info_util">
+                            
+                        </div>
+                    </div>
+                    <p><i class="fa-sharp fa-solid fa-check"></i> <span class="kbscan">KB</span>scan assiste ses clients dans leur transformation numérique et numérisation, elle offre ainsi une gestion entièrement électronique des données exploitées dans les processus métier. </p>
+                    
+                </div>
+            
+            </div>
+        </section>
+        
+
+ <footer id="contact">
+    
+   <!-- <div class="pied-page">
+    <div class="contactform">
+    <form action="mail.php" >
+        <div class="inputboite">
+          <input type="text" placeholder="Nom" name="name" id="name">
+        </div>
+        <div class="inputboite">
+          <input type="email"placeholder="email" name="email" id="email">
+        </div>
+        <div class="inputboite">
+        <textarea placeholder="Message" name="message" id="message"></textarea>
+       </div>
+       <div class="inputboite">
+         <input type="submit" value="envoyer">
+       </div>
+    </form>
+      </div>
+     
+      <div class="pied-propo">
+         <a href="#apropos"> <h2>À propos </h2></a>
+          <p>-QU’EST-CE QUE KBscan ?</p>
+      </div>
+      <div class="pied-avantage">
+         <a href="#service"> <h2>Nos Avantages</h2></a>
+          <p>-L’accès rapide et à distance aux documents </p>
+          <p>-Une plateforme unique pour l’ensemble des documents de l’entreprise.</p>
+          <p>-L’archivage et la conservation des documents.</p>
+      </div>
+      <div class="pied-service">
+         <a href="#temoignge"> <h2>Nos Services</h2></a>
+          <p>-Archivage Physique et Électronique</p>
+          <p>-Dematerialisation</p>
+          
+          <p>-CONSEIL & INGÉNIERIE</p>
+          Conseil & Ingéni
+          <p>-EXTERNALISATION DES PROCESSUS MÉTIERS</p>
+      </div>
+        <div class="pied-d">
+          
+          <p>Localisation<i class="fas fa-map-marker"></i></p>
+          <p>mail_@hotmail.com<i class="far fa-envelope"></i></p>
+          <p>+2120000000<i class="fas fa-mobile"></i></p>
+      </div>
+     </div>-->
+     
+     <div class="div-footer">
+        <span class="localisation">
+           <i class="fas fa-map-marker"></i>
+          <p class=p-localisation> 32 Av. Madagascar, Rabat 10040</p>
+        </span>
+        <span class="email">
+           <i class="far fa-envelope"></i>
+          <p class="p-email"> kbscan_@gmail.com</p>
+        </span>
+        <span class="telephone">
+           <i class="fas fa-mobile"></i>
+             <p class="p-telephone"> +212658475258</p>
+        </span>
+   </div>
+ </footer>
+   
+</body>
+</html>

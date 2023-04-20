@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top:0%;
+    left: 0%;
+   background-color: #C83B31;
+    padding:20px 10px;
+    width: 100%;
+    height:80px;
+    z-index:1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0,8s;
+}
+.logo img 
+{
+width:8%;
+position: absolute;
+top: 28%;
+left: 5%;
+
+}
+.plus{
+padding-left: 20px;
+}
+
+.navbar1{
+    display: flex;
+    position: relative;
+  
+}
+
+.navbar1 li{
+    list-style: none;
+    position: relative;
+    padding: 18px 14px ;
+}
+.navbar1 li a{
+   color: white;
+    text-decoration: none;
+    margin-left:30px;
+     font-weight: 700;  
+     font-size: 15px;
+     display: block;
+    
+}
+.navbar1 li ul  {
+    display: none;
+    position: absolute;
+    width:250px;
+    margin-left:30px;
+   height:50px;
+   margin-top:15px;
+  
+
+}
+.sub-menu-1{
+    display: none;
+    
+}
+.navbar1 li ul li:hover .sub-menu-1{
+display: block;
+position: absolute;
+margin-left: 200px;
+margin-top:-56px;
+
+}
+
+
+
+.navbar1 li ul li {
+    background-color:#C83B31;
+    border-bottom: 1px solid beige;
+  
+}
+
+.navbar1 ul li a{
+ margin-left: 0;
+} 
+
+.navbar1 li:hover ul{
+display: block;
+
+}
+
+header .navbar1 li a:hover{   
+    color:black;
+
+}   
+header .navbar1 ul li a:hover{
+    color: black;
+}
+
+header.sticky{
+    background:beige;
+    height:60px;
+    padding: 10px 10px;
+
+
+}
+
+header.sticky .navbar1 li a{
+    color: #C83B31;
+}
+header.sticky .navbar1 ul li{
+    background-color: beige;
+    border-bottom: 1px solid #C83B31;
+
+}
+header.sticky .navbar1 ul li a:hover{
+    color:black ;
+
+}
+.titre1{
+    margin-top:200px;
+    color: #C83B31;
+    margin-left:100px;
+}
+hr{
+    color: #C83B31;
+    border-top: 1px solid #8c8b8b;
+    width:200px;
+    margin-left:100px;
+    margin-top: 10px;
+}
+.image img{
+    width:50%;
+    margin-top:100px;
+    margin-left:330px;
+}
+.titre2{
+    margin-top:200px;
+    color: #C83B31;
+    margin-left:100px;
+}
+.archi #p1{
+    margin-top: 40px;
+    margin-left: 110px;
+}
+.archi h3{
+    margin-top:30px;
+    margin-left:120px ;
+}
+
+.p2 {
+    margin-left:130px;
+    margin-top: 30px;
+    width:700px;
+     text-align: justify;
+    
+}
+.archi h3 a{
+    text-decoration: none;
+    color: black;
+}
+.image1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1),#C83B31), url(./image/12.jpg) center/cover no-repeat;
+    height:200px;
+    width:400px;
+    flex-basis: 35%;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+ margin-left:65%;
+ margin-top: -28%;
+}
+.image2{
+    background: linear-gradient(rgba(0, 0, 0, 0.1),#C83B31), url(./image/31.jpg) center/cover no-repeat;
+    height:200px;
+    width:400px;
+    flex-basis: 35%;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+ margin-left:65%;
+ margin-top:-10%;
+}
+/*archiphysique*/
+.archi-phisi .p-phisi {
+    margin-top: 40px;
+    margin-left: 110px;
+    text-align: justify;
+    width:50%;
+}
+.point-forts h3{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.archi-phisi .point-forts{
+  
+    width:55%;
+    margin-left:100px;
+    margin-top: 20px;
+    line-height:1.6;
+}
+.archi-phisi .point-forts .a{
+    text-align: justify;
+    list-style-position: outside;
+    margin-left:80px;
+}
+
+.archi-phisi .b li{
+    margin-left:80px;
+}
+.archi-phisi .b{
+    line-height:1.8;
+}
+.archi-phisi .point-forts .image1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1),#C83B31), url(./image/12.jpg) center/cover no-repeat;
+    height:200px;
+    width:400px;
+    flex-basis: 35%;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+ margin-left:60%;
+ margin-top: -25%;
+}
+.kbscan{
+    color: #C83B31;
+    font-weight: bold;
+}
+.archi .info{
+    text-decoration: none;
+    color: #C83B31;
+}
+.archi-phisi .image1{
+    margin-top:-30%;
+}
+
+/*archielectronique*/
+.archi-electro .point-forts .b{
+    text-align: justify;
+    list-style-position: outside;
+    margin-left:80px;
+    width:50%;
+    margin-left:10%;
+}
+.archi-electro .point-forts .image2{
+    background: linear-gradient(rgba(0, 0, 0, 0.1),#C83B31), url(./image/31.jpg) center/cover no-repeat;
+    height:200px;
+    width:400px;
+    flex-basis: 35%;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+ margin-left:60%;
+ margin-top:-21%;
+}
+.archi-electro .point-forts h3{
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left:80px;
+}
+.archi-electro .image2{
+    margin-top: -40%;
+    
+}
+
+/*ged*/
+.ged .t1{
+    margin-top:50px;
+    margin-left:70px;
+}
+.ged .p1{
+    margin-left:90px ;
+    width:60%;
+    text-align: justify;
+    margin-top:20px;
+}
+.ged .t2{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.ged .p2{
+    margin-left:90px ;
+    width:60%;
+    text-align: justify;
+    margin-top:20px;
+}
+.ged .point-forts{
+    text-align: justify;
+    list-style-position: outside;
+    margin-left:80px;
+    width:50%;
+    margin-left:10%;
+    margin-top: 2%;
+}
+
+/*EAC*/
+.EAC-p{
+    width:60%;
+    text-align: justify;
+    margin-left:20%;
+    margin-top: 2%;
+}
+.image-EAC img
+{
+   margin-top: 2%;
+    width: 50%;
+    height:10%;
+    margin-left: 25%;
+}
+
+/*expertise*/
+.expertise h3{
+    margin-top:7%;
+    margin-left: 5%;
+}
+.expertise .p1{
+    width:80%;
+    text-align:justify ;
+    margin-left:7%;
+    margin-top:3%;
+    
+}
+.expertise .p2{
+    width:80%;
+    text-align:justify ;
+    margin-left:7%;
+    margin-top:3%;
+    padding-bottom: 5%;
+    
+}
+.expertise{
+    border:2px solid #C83B31;
+    border-radius: 5%;
+   margin-top: 12%;
+   width:45%;
+   margin-left: 2%;
+   font-size: 13px;
+  
+}
+.politique{
+    border:2px solid #C83B31;
+    border-radius: 5%;
+    width:45%;
+    margin-left:50%;
+    margin-top: -580px;
+    position: absolute;
+    font-size: 13px;
+}
+.politique .p1{
+    width:80%;
+    text-align:justify ;
+    margin-left:15%;
+    margin-top:10%;
+    
+}
+.politique .p2{
+    width:80%;
+    text-align:justify ;
+    margin-left:15%;
+    margin-top:10%;
+   
+}
+.politique .p3{
+    width:80%;
+    text-align:justify ;
+    margin-left:15%;
+    margin-top:10%;
+    
+}
+.politique .p4{
+    width:90%;
+    text-align:justify ;
+    margin-left:7%;
+    margin-top:7%;
+    padding-bottom:7%;
+}
+.expertise .titre2{
+    margin-top:10%;
+    margin-left:35%;
+}
+.politique .titre2{
+    margin-top:10%;
+    margin-left:35%;
+}
+.expertise hr{
+    margin-left:33%;
+}
+.politique hr{
+    margin-left:33%;
+}
+.politique .fa-solid {
+    font-size: 30px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+/*qualite*/
+.image-qualite img{
+    
+    width:30%;
+    height:50%;
+    margin-left:60%;
+    position: absolute;
+}
+.qualite .qualite-p{
+    width:40%;
+    text-align: justify;
+    margin-left:10%;
+    margin-top:5%;
+
+}
+
+
+/*securite*/
+.image-securite img{
+    width:30%;
+    height:50%;
+    margin-left:60%;
+    position: absolute;
+    margin-top:3%;
+}
+.securite-p{
+    width:40%;
+    text-align: justify;
+    margin-left:10%;
+    margin-top:3%;
+    
+}
+.securite .titre2{
+    margin-top:7%;
+    
+}
+.securite2 p{
+    margin-left:13%;
+}
+.securite2 h3{
+    font-size:18px;
+    margin-top:20px;
+    margin-left:12%;
+    
+}
+.securite .securite2 .b{
+    text-align: justify;
+    list-style-position: outside;
+    width:50%;
+    margin-left:15%;
+    margin-top:10px;
+    
+}
+
+/*footer*/
+.pied-logo img{
+    width:10%;
+    margin-top:2%;
+    margin-left: 2%;
+}
+footer{
+    width: 100%;
+    background:#C83B31;
+    bottom: 0;
+    height:70%;
+margin-top:10%;
+    
+}
+
+footer .localisation{
+    display: inline-block;
+  
+    width:300px;
+    height:150px;
+    margin-left:200px;
+   margin-top:3%;
+   
+}
+footer .email{
+    display: inline-block;
+ 
+   position: absolute;
+    width:300px;
+    height:150px;
+    margin-left:80px;
+    margin-top:3%;
+}
+footer .telephone{
+    display: inline-block;
+    position: absolute;
+   
+    width:300px;
+    height:150px;
+    margin-left:420px;
+    margin-top:3%;
+    
+}
+
+.p-localisation{
+    margin-top:27px;
+   text-align: center;
+   
+
+}
+.p-email{
+    margin-top: 22px;
+    text-align: center;
+}
+.p-telephone{
+    margin-top:28px;
+    text-align: center;
+}
+.div-footer .fas {
+    color:black;
+    margin-left: 130px;
+    margin-top:30px;
+    font-size:30px;
+    
+}
+
+.div-footer .far {
+    color:black;
+    margin-left:130px;
+    margin-top:30px;
+     font-size:35px;
+}
+@media (max-width: 991px) {
+    header,
+    header.sticky{
+        padding: 10px 20px;
+      height:65px;
+    }
+    header .navbar1 li{
+        margin-left: 0px;
+    }
+    header .navbar1 li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 2em;
+        font-weight: 300;
+        
+    }
+    .navbar1{
+        display: none;
+        
+    }
+    header .navbar1.active{
+        width:100%;
+        height: 100%;
+        height: calc(100% -68px);
+        position: fixed;
+        top:70px;
+        padding-top: 50px;
+        display: flex;
+        justify-content:left;
+        flex-direction: column;
+        background:beige;
+       padding-right: 10px;
+        border-radius: 3em;
+    transition: 0.6s ease-in;
+    }
+    header .navbar1.active{
+        color: #C83B31;
+    }
+    header .logo img {
+        width: 20%;
+        
+    }
+    header .navbar1.active li ul{
+        margin-top: -10px;
+      margin-left:50%;
+      font-size: 10px;
+      position: relative;
+     
+    }
+    
+   
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url(./image/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        background-size: 30px;
+        margin-left:80%;
+    }
+    
+    .menuToggle.active
+    {
+        background-image: url(./image/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-origin: center;
+      
+    }
+    
+    header.sticky .menuToggle{
+        filter: invert(1);
+        
+    }
+    .titre2{
+        margin-top:150px;
+        margin-left: 20px;
+        font-size:20px;
+       
+    }
+  .archi #p1{
+    width:auto;
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .archi .archiph{
+    margin-left:30px;
+    font-size: 15px;
+
+  }
+  .archi .p2{
+    width:50%;
+    margin-left:40px;
+    font-size: 12px;
+  }
+  .archi #p2{
+    width:auto;
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .image1{
+    width:32%;
+    height: 30%;
+    margin-top: -102%;
+  }
+  .image2{
+    width:32%;
+    height: 30%;
+    margin-top: -44%;
+  }
+hr{
+    margin-left:25px;
+}
+/*archiphisique*/
+
+.archi-phisi .p-phisi{
+    margin-left:20px;
+    width:400px;
+    font-size: 12px;
+}
+
+
+.archi-phisi .point-forts h3{
+    margin-left: -32%;
+    font-size: 15px;
+    text-align: justify;
+}
+.point-forts .list-phisi{
+    
+margin-left:-50%;
+
+width:400px;
+font-size: 12px;
+}
+.archi-phisi .image1{
+    width:20%;
+    height: 20%;
+    margin-left:55%;
+    margin-top:-570px;
+    display: none;
+}
+/*archielectronique*/
+.archi-electro .p2{
+    margin-left:15%;
+    font-size: 12px;
+    width:70%;
+}
+.archi-electro .point-forts h3{
+    margin-left:10%;
+    font-size:15px;
+}
+.archi-electro .point-forts .b{
+    margin-left:15%;
+    width:70%;
+    font-size: 12px;
+}
+.archi-electro  .image2{
+    width:20%;
+    height: 20%;
+    margin-top: -500px;
+    display: none;
+}
+/*ged*/
+
+.ged .t1{
+    font-size: 13px;
+    margin-left:25px;
+}
+.ged .p1{
+    font-size: 12px;
+    margin-left:40px ;
+    width:370px;
+}
+.ged .t2{
+    font-size:13px;
+    margin-left:25px;
+}
+.ged .p2{
+    font-size: 12px;
+    margin-left:40px ;
+    width:370px;
+}
+.ged .point-forts{
+    font-size:13px;
+    width: 80%;
+    text-align: justify;
+    margin-left: 15%;
+}
+.ged .point-forts .b li{
+    padding-bottom:8px;
+    text-align: justify;
+}
+.ged .titre2 {
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top:30%;
+}
+
+/*EAC*/
+.eac .titre1{
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top:30%;
+}
+.image-EAC img{
+    height:150px;
+    width:310px;
+    margin-left:15%;
+    margin-top:8%;
+}
+.eac .EAC-p{
+    font-size:13px;
+    width:85% ;
+    margin-left:8%;
+    margin-top: 8%;
+}
+
+/*Notre expertise*/
+
+.expertise{
+    width:90%;
+    height: 100%;
+    margin-left:20px;
+    margin-top:100px;
+}
+.expertise .titre2{
+    margin-left:125px;
+}
+.expertise hr{
+    margin-left: 103px;
+}
+
+.politique{
+    width: 90%;
+    height: 100%;
+    margin-left:20px;
+    margin-top:30px;
+    position: relative;
+}
+.politique .titre2{
+    margin-left:125px;
+}
+.politique hr{
+    margin-left: 103px;
+}
+/*nos valeurs*/
+.qualite .titre1{
+    margin-top:120px;
+        margin-left:8%;
+        font-size:20px;
+}
+
+.qualite hr{
+    width:30%;
+}
+.qualite .qualite-p{
+    margin-top:50%;
+    width:80%;
+    margin-left:10%;
+    font-size: 13px;
+}
+.qualite .image-qualite img{
+    margin-top: 5%;
+    width:40%;
+    height: 25%;
+    margin-left:30%;
+}
+
+
+.securite .titre2{
+    margin-top:50px;
+    margin-left:8%;
+    font-size:20px;
+}
+.securite hr{
+    width:30%;
+}
+.securite .securite-p{
+    margin-top:45%;
+    width:80%;
+    margin-left:10%;
+    font-size: 13px;
+}
+.securite .image-securite img{
+    margin-top: 5%;
+    width:40%;
+    height: 25%;
+    margin-left:30%;
+}
+.securite2 h3{
+    font-size: 15px;
+} 
+.securite2 .b{
+ font-size: 13px;
+}
+
+
+
+ /*footer*/ 
+ footer{
+    width:100%;
+    height: 100%;
+}
+footer .localisation{
+    margin-left:15%;
+    height:10px;
+    font-size: 12px;
+  font-weight: bold;
+   margin-top: -5%;
+   position: relative;
+}
+footer .email{
+    margin-left:15%;
+    font-size: 12px;
+    height:10%;
+    margin-top: -5%;
+    font-weight: bold;
+    position: relative;
+}
+footer .telephone{
+    margin-left: 15%;
+    font-size: 12px;
+    height:10%;
+    margin-top: -2%;
+    font-weight: bold;
+    position: relative;
+}
+footer .telephone p{
+    margin-top:10px;
+}
+.div-footer .fas{
+    font-size:20px;
+    margin-left: 45%;
+    border: 2px solid  rgb(134, 31, 31);
+    border-radius:5px;
+    width: 10%;
+    height:30px;
+    text-align: center;
+    padding-top:4px;
+    background-color: rgb(245, 245, 187);
+    color: #C83B31;
+}
+.div-footer .far{
+    font-size:20px;
+    margin-left: 45%;
+    border: 2px solid  rgb(134, 31, 31);
+    width: 10%;
+    height:30px;
+    text-align: center;
+    padding-top:4px;
+    color: #C83B31;
+    background-color: rgb(245, 245, 187);
+    border-radius:5px;
+}
+ 
+}  
+
